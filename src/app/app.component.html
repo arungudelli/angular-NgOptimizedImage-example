@@ -1,8 +1,9 @@
-<ng-container *ngFor="let i of imagesCount">
+<ng-container *ngFor="let img of imageUrls">
   <img
-    rawSrc="https://angular.io/assets/images/logos/angular/angular.png"
-    width="250"
-    height="250"
-    [ngClass]="i"
+    [rawSrc]="img.url"
+    width="1024"
+    height="768"
+    [ngClass]="img.id"
   />
+  <p>{{randomContent}}</p>
 </ng-container>
