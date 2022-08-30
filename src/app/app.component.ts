@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  imagesCount: string[] = [];
+
+  constructor() {
+    for (let i = 0; i < 10; i++) {
+      this.imagesCount.push("class-" + i);
+    }
+  }
 }
