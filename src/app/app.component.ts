@@ -12,11 +12,11 @@ export class AppComponent {
   randomContent = "";
 
   constructor() {
-    var baseUrl = "https://picsum.photos/4000/3000?random=";
-    for (let i = 1; i < 10; i++) {
+    var baseUrl = "https://ik.imagekit.io/arungudelli/";
+    for (let i = 1; i < 7; i++) {
       this.imageUrls.push({
         id:"class-"+i,
-        url:baseUrl+i
+        url:baseUrl+i+"-"+"4000x3000_ag.jpg"
       });
     }
 
