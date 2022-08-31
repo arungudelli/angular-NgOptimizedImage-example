@@ -12,7 +12,7 @@ export class AppComponent {
   randomContent = "";
 
   constructor() {
-    var baseUrl = "https://picsum.photos/1024/768?random=";
+    var baseUrl = "https://picsum.photos/4000/3000?random=";
     for (let i = 1; i < 10; i++) {
       this.imageUrls.push({
         id:"class-"+i,
