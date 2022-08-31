@@ -1,9 +1,21 @@
 <ng-container *ngFor="let img of imageUrls">
-  <img
+  <ng-container *ngIf="img.id=='class-1'">
+    <img
+    [rawSrc]="img.url"
+    width="1024"
+    height="768"
+    [ngClass]="img.id"
+    priority
+  />
+  </ng-container>
+  <ng-container *ngIf="img.id!='class-1'">
+    <img
     [rawSrc]="img.url"
     width="1024"
     height="768"
     [ngClass]="img.id"
   />
+  </ng-container>
+
   <p>{{randomContent}}</p>
 </ng-container>
