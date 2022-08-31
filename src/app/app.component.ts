@@ -12,11 +12,10 @@ export class AppComponent {
   randomContent = "";
 
   constructor() {
-    var baseUrl = "https://ik.imagekit.io/arungudelli/";
     for (let i = 1; i < 7; i++) {
       this.imageUrls.push({
         id:"class-"+i,
-        url:baseUrl+i+"-"+"4000x3000_ag.jpg"
+        url:i+"-"+"4000x3000_ag.jpg"
       });
     }
 

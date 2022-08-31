@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgOptimizedImage } from '@angular/common';
+import {provideImageKitLoader} from '@angular/common';
+
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { NgOptimizedImage } from '@angular/common';
     BrowserModule,
     NgOptimizedImage
   ],
-  providers: [],
+  providers: [
+    provideImageKitLoader("https://ik.imagekit.io/arungudelli/")
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
